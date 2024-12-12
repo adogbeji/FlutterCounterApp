@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   //   });
   // }
 
-  final counter = CounterCubit();
+  final counter = CounterCubit().state;
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '$counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
