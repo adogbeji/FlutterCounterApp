@@ -6,5 +6,6 @@ class CounterCubit extends Cubit<int> {
   void increment() {
     print('Before: $state');
     emit(state + 1);
+    print('After: $state');
   }
 }
