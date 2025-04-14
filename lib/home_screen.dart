@@ -21,6 +21,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // int _counter = 0;
+  final counterCubit = CounterCubit();
+  // final counter = CounterCubit().state;
+  // final counter = CounterCubit.state;
 
   // void _incrementCounter() {
   //   setState(() {
@@ -33,10 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
   //   });
   // }
 
-  final counter = CounterCubit().state;
+  // final counter = CounterCubit().state;
 
   @override
   Widget build(BuildContext context) {
+    final counter = CounterCubit.state;
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
